@@ -1,0 +1,469 @@
+:root {
+    --color-primary: #0d2758; /* Темно-синий из логотипа */
+    --color-primary-dark: #081a3d;
+    --color-accent: #ffb703; /* Акцентный оранжево-желтый */
+    --color-accent-hover: #ff9f1c;
+    --color-white: #ffffff;
+    --color-bg-light: #f8f9fa;
+    --color-text-main: #333333;
+    --color-text-muted: #6c757d;
+    --color-border: #e9ecef;
+    --font-family: 'Inter', sans-serif;
+    --container-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--color-text-main);
+    background-color: var(--color-white);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- Header --- */
+.header {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.header-top {
+    background-color: var(--color-primary);
+    padding: 8px 0;
+    font-size: 13px;
+    color: var(--color-white);
+}
+
+.header-top-inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info-item {
+    margin-left: 20px;
+}
+
+.header-main {
+    background-color: var(--color-white);
+    padding: 15px 0;
+}
+
+.header-main-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 60px; /* Adjust based on logo proportions */
+    display: block;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: var(--color-accent);
+}
+
+.header-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.phone-link {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.btn-outline:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-primary {
+    background: var(--color-accent);
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background: var(--color-accent-hover);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* --- Hero Section --- */
+.hero {
+    position: relative;
+    height: calc(100vh - 120px);
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(13, 39, 88, 0.9) 0%, rgba(13, 39, 88, 0.9) 15%, rgba(13, 39, 88, 0.7) 65%, rgba(13, 39, 88, 0.3) 100%);
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-content {
+    color: var(--color-white);
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.hero-features li {
+    font-size: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.check-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--color-accent);
+    color: var(--color-primary);
+    border-radius: 50%;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hero-actions-mobile {
+    display: none;
+}
+
+/* Form */
+.hero-form-wrapper {
+    width: 420px;
+    flex-shrink: 0;
+}
+
+.hero-form {
+    background: var(--color-white);
+    padding: 35px 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.hero-form h2 {
+    color: var(--color-primary);
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.hero-form p {
+    color: var(--color-text-muted);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: var(--font-family);
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: var(--color-primary);
+}
+
+.form-disclaimer {
+    margin-top: 15px !important;
+    font-size: 12px !important;
+    color: var(--color-text-muted) !important;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+/* Advantages Bar */
+.hero-advantages {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    background: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    padding: 15px 0;
+    width: 100%;
+    max-width: var(--container-width);
+}
+
+.advantage-item {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid var(--color-border);
+}
+
+.advantage-item:last-child {
+    border-right: none;
+}
+
+.adv-number {
+    color: var(--color-primary);
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+
+.adv-text {
+    color: var(--color-text-muted);
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+/* --- Mobile Menu Button --- */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+.mobile-menu-btn span {
+    display: block;
+    height: 2px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+}
+
+/* Responsive (Mobile/Tablet) */
+@media (max-width: 1024px) {
+    .hero-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-content {
+        margin-bottom: 40px;
+    }
+    .hero-features {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-top {
+        display: none; /* Экономим место на мобильном, скрывая верхнюю плашку */
+    }
+    .header-main {
+        padding: 12px 0;
+    }
+    .main-nav {
+        display: none; /* Скрываем основное меню, оставляем бургер */
+    }
+    .mobile-menu-btn {
+        display: flex;
+        order: 3; /* Справа от телефона */
+        margin-left: 15px;
+    }
+    .header-contacts {
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+    }
+    .btn-outline {
+        display: none; /* Скрываем кнопку 'Заказать звонок' */
+    }
+    .phone-link {
+        font-size: 16px;
+    }
+    .logo {
+        max-height: 35px;
+    }
+    
+    .hero {
+        height: auto;
+        min-height: calc(100vh - 60px); /* 100vh минус высота хедера */
+        padding-top: 40px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .hero-inner {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .hero-content {
+        margin-bottom: 40px; /* Отступ до формы */
+    }
+    .hero h1 {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+    .hero-subtitle {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .hero-features {
+        margin-bottom: 0;
+    }
+    .hero-features li {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    .hero-form-wrapper {
+        width: 100%;
+        max-width: 400px;
+    }
+    .hero-form {
+        padding: 20px;
+    }
+    .hero-form h2 {
+        font-size: 18px;
+    }
+    .hero-form p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .form-group input {
+        padding: 12px;
+        font-size: 14px;
+    }
+    .btn-primary {
+        padding: 12px;
+        font-size: 15px;
+    }
+    
+    .hero-advantages {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: calc(100% - 30px);
+        max-width: 400px;
+        padding: 15px 5px;
+        margin: 10px auto 0; /* Центрирование по ширине формы */
+    }
+    .advantage-item {
+        padding: 0 5px;
+    }
+    .adv-number {
+        font-size: 20px;
+    }
+    .adv-text {
+        font-size: 10px;
+        line-height: 1.2;
+        word-wrap: break-word;
+    }
+}
