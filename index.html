@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка нерудных материалов | Медиум Групп</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header-top">
+        <div class="container header-top-inner">
+            <div class="header-info">
+                <span class="info-item">Работаем круглосуточно, 24/7</span>
+                <span class="info-item">info@medium-group.ru</span>
+            </div>
+        </div>
+    </div>
+    
+    <header class="header-main">
+        <div class="container header-main-inner">
+            <div class="logo-area">
+                <img src="logo.png" alt="Медиум Групп" class="logo">
+            </div>
+            
+            <div class="mobile-menu-btn" id="burger-btn">
+                <span></span><span></span><span></span>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Каталог продукции</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+                <a href="tel:+74950000000" class="phone-link">+7 (495) 000-00-00</a>
+                <button class="btn btn-outline open-modal-btn" id="call-request-btn">Заказать звонок</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <h1>Доставка нерудных материалов по Москве и области</h1>
+                <p class="hero-subtitle">Собственный автопарк. Отгрузка от 1 м³. Работаем круглосуточно без выходных. Гарантия честного объема и веса.</p>
+                <ul class="hero-features">
+                    <li><span class="check-icon">✓</span> Доставка в день заказа</li>
+                    <li><span class="check-icon">✓</span> Оплата по факту отгрузки</li>
+                    <li><span class="check-icon">✓</span> Сертификаты качества (ГОСТ)</li>
+                </ul>
+                <div class="hero-actions-mobile">
+                     <button class="btn btn-primary">Рассчитать стоимость</button>
+                </div>
+            </div>
+            
+            <div class="hero-form-wrapper">
+                <div class="hero-form">
+                    <h2>Узнайте стоимость материалов с доставкой</h2>
+                    <p>Оставьте заявку, и наш менеджер перезвонит вам через 5 минут для расчета стоимости</p>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Ваш телефон" required>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="privacy-policy" required>
+                            <label for="privacy-policy">Согласие с политикой конфиденциальности</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Получить расчет стоимости</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Advantages Bar overlaying the bottom -->
+        <div class="hero-advantages container">
+            <div class="advantage-item">
+                <div class="adv-number">10+</div>
+                <div class="adv-text">лет на рынке<br>нерудных материалов</div>
+            </div>
+            <div class="advantage-item">
+                <div class="adv-number">50+</div>
+                <div class="adv-text">единиц собственной<br>спецтехники</div>
+            </div>
+            <div class="advantage-item">
+                <div class="adv-number">1 м³</div>
+                <div class="adv-text">минимальный объем<br>заказа с доставкой</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog section-padding">
+        <div class="container">
+            <h2 class="section-title">Каталог продукции</h2>
+            <div class="catalog-grid">
+                <!-- Sand -->
+                <div class="catalog-card">
+                    <div class="card-img">
+                        <img src="sand.png" alt="Песок">
+                    </div>
+                    <div class="card-content">
+                        <h3>Песок</h3>
+                        <ul class="card-features">
+                            <li><strong>Модуль крупности:</strong> 1.5-2.0</li>
+                            <li><strong>Насыпная плотность:</strong> 1.4 т/м³</li>
+                            <li><strong>ГОСТ:</strong> 8736-2014</li>
+                        </ul>
+                        <p class="price">от 800 ₽ / м³</p>
+                        <button class="btn btn-primary btn-block card-btn open-modal-btn">Заказать</button>
+                    </div>
+                </div>
+                <!-- Crushed Stone -->
+                <div class="catalog-card">
+                    <div class="card-img">
+                        <img src="stone.png" alt="Щебень">
+                    </div>
+                    <div class="card-content">
+                        <h3>Щебень</h3>
+                        <ul class="card-features">
+                            <li><strong>Фракция:</strong> 20-40 мм</li>
+                            <li><strong>Прочность:</strong> М1200</li>
+                            <li><strong>Лещадность:</strong> до 15%</li>
+                        </ul>
+                        <p class="price">от 1 200 ₽ / м³</p>
+                        <button class="btn btn-primary btn-block card-btn open-modal-btn">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Section -->
+    <section class="delivery section-padding">
+        <div class="container">
+            <h2 class="section-title text-white">Доставка</h2>
+            <div class="delivery-content">
+                <p>Мы осуществляем круглосуточную доставку нерудных материалов по всей Москве и Московской области. Собственный автопарк позволяет нам гарантировать оперативность и отгрузку в день заказа, обеспечивая бесперебойную работу вашего объекта.</p>
+                
+                <div class="delivery-columns">
+                    <div class="delivery-col">
+                        <ul class="delivery-list">
+                            <li><strong>Минимальный объем заказа:</strong> от 1 м³</li>
+                            <li><strong>Сроки доставки:</strong> от 2 часов с момента подтверждения заявки</li>
+                            <li><strong>Оплата:</strong> по факту отгрузки (наличный, безналичный расчет)</li>
+                            <li><strong>Пропуска:</strong> транспорт имеет пропуска для въезда внутрь ТТК и Садового кольца</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="delivery-col">
+                        <div class="delivery-geo">
+                            <div class="geo-tags">
+                                <span>Москва (все округа)</span>
+                                <span>Мытищи</span>
+                                <span>Химки</span>
+                                <span>Красногорск</span>
+                                <span>Подольск</span>
+                                <span>Люберцы</span>
+                                <span>Одинцово</span>
+                                <span>Балашиха</span>
+                                <span>Домодедово</span>
+                                <span>Королёв</span>
+                                <span>Видное</span>
+                                <span>Реутов</span>
+                                <span>Зеленоград</span>
+                                <span>Дзержинский</span>
+                                <span>Пушкино</span>
+                                <span>Долгопрудный</span>
+                                <span>Щелково</span>
+                                <span>Раменское</span>
+                                <span>Лобня</span>
+                                <span>Ивантеевка</span>
+                                <span>Троицк</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <h2 class="section-title">О компании</h2>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p><strong>Медиум Групп</strong> — ваш надежный партнер на рынке поставок нерудных строительных материалов с опытом работы более 10 лет. Мы специализируемся на оптовой и розничной продаже песка и щебня всех фракций напрямую с карьеров.</p>
+                    <p>Наша главная цель — обеспечить строительные объекты качественными материалами точно в срок. Наличие собственного крупного автопарка спецтехники позволяет нам осуществлять бесперебойную доставку в режиме 24/7 и предлагать нашим клиентам лучшие цены на рынке за счет отсутствия посредников.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-num">>10</div>
+                        <div class="stat-desc">Лет на рынке</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">37</div>
+                        <div class="stat-desc">Единиц спецтехники</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">5800+</div>
+                        <div class="stat-desc">Довольных клиентов</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">740k+</div>
+                        <div class="stat-desc">Тонн доставлено</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates section-padding" id="certificates">
+        <div class="container">
+            <h2 class="section-title text-white">Сертификаты и ГОСТы</h2>
+            <div class="certs-grid">
+                <img src="https://placehold.co/300x420?text=Фото+не+загружено" alt="Сертификат ГОСТ" class="cert-img">
+                <img src="https://placehold.co/300x420?text=Фото+не+загружено" alt="Паспорт качества" class="cert-img">
+                <img src="https://placehold.co/300x420?text=Фото+не+загружено" alt="Сертификат соответствия" class="cert-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding" id="faq">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Работаете ли вы с НДС?</div>
+                    <div class="faq-answer">Да, мы работаем с НДС 20%. Предоставляем полный пакет закрывающих документов.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Какой минимальный объем заказа?</div>
+                    <div class="faq-answer">Минимальный объем заказа для доставки собственным транспортом составляет 1 м³. Возможен самовывоз любого объема.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Есть ли у машин пропуска на МКАД, ТТК, СК?</div>
+                    <div class="faq-answer">Да, весь наш транспорт имеет необходимые пропуска для круглосуточного въезда в пределы МКАД, ТТК и Садового кольца.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Как быстро вы можете привезти материал?</div>
+                    <div class="faq-answer">При наличии свободных машин доставка осуществляется от 2 часов с момента подтверждения заявки. В среднем доставка занимает 3-4 часа.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contacts">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Медиум Групп</h3>
+                <p>Поставка нерудных материалов в Москве и Московской области.</p>
+                <div class="footer-contacts">
+                    <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
+                    <p><strong>Email:</strong> info@medium-group.ru</p>
+                    <p><strong>Адрес:</strong> г. Москва, ул. Строителей, д. 10</p>
+                </div>
+            </div>
+            <div class="footer-form-container">
+                <h3>Рассчитать стоимость для вашего объекта</h3>
+                <form class="footer-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="Телефон" required>
+                    <div class="form-checkbox" style="color: rgba(255, 255, 255, 0.7); margin-bottom: 0;">
+                        <input type="checkbox" id="footer-privacy-policy" required>
+                        <label for="footer-privacy-policy">Согласие с <a href="privacy.html" style="color: inherit; text-decoration: underline;">политикой конфиденциальности</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Получить расчет</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <p style="margin: 0;">&copy; 2026 Медиум Групп. Все права защищены.</p>
+                <a href="privacy.html" style="color: rgba(255, 255, 255, 0.5); font-size: 14px; text-decoration: underline;">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="callback-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <h3>Заказать звонок</h3>
+            <p>Оставьте свои контакты, и наш менеджер перезвонит вам в течение 15 минут.</p>
+            <form class="modal-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="modal-privacy-policy" required>
+                    <label for="modal-privacy-policy">Согласие с <a href="privacy.html" style="color: inherit; text-decoration: underline;">политикой конфиденциальности</a></label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Перезвоните мне</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu
+        const burger = document.getElementById('burger-btn');
+        const nav = document.querySelector('.main-nav');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            burger.classList.toggle('active');
+        });
+
+        // FAQ Toggle
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Modal Toggle
+        const modal = document.getElementById('callback-modal');
+        const modalBtns = document.querySelectorAll('.open-modal-btn');
+        const closeBtn = document.getElementById('modal-close-btn');
+
+        if(modal && closeBtn) {
+            modalBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    modal.classList.add('active');
+                });
+            });
+
+            closeBtn.addEventListener('click', () => {
+                modal.classList.remove('active');
+            });
+
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
